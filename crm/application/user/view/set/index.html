@@ -1,0 +1,219 @@
+{include file="common/loginHead"/}
+<div class="main fly-user-main layui-clear">
+    <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="user">
+        <li class="layui-nav-item">
+            <a href="{:url('index/index')}">
+                <i class="layui-icon">&#xe609;</i>
+                æˆ‘çš„ä¸»é¡µ
+            </a>
+        </li>
+        <li class="layui-nav-item layui-this">
+            <a href="set.html">
+                <i class="layui-icon">&#xe620;</i>
+                åŸºæœ¬è®¾ç½®
+            </a>
+        </li>
+    </ul>
+
+    <div class="site-tree-mobile layui-hide">
+        <i class="layui-icon">&#xe602;</i>
+    </div>
+    <div class="site-mobile-shade"></div>
+
+    <div class="fly-panel fly-panel-user" pad20>
+        <div class="layui-tab layui-tab-brief" lay-filter="user">
+            <ul class="layui-tab-title" id="LAY_mine">
+                <li class="layui-this" lay-id="info">æˆ‘çš„èµ„æ–™</li>
+                <li lay-id="avatar">å¤´åƒ</li>
+                <li lay-id="pass">å¯†ç </li>
+                <li lay-id="bind">å¸å·ç»‘å®š</li>
+            </ul>
+            <div class="layui-tab-content" style="padding: 20px 0;">
+                <div class="layui-form layui-form-pane layui-tab-item layui-show">
+                    <form method="post">
+                        <div class="layui-form-item">
+                            <label for="L_email" class="layui-form-label">é‚®ç®±</label>
+                            <div class="layui-input-inline">
+                                <input type="text" id="L_email" name="email" lay-verify="email" value="{$userInfo.email}" class="layui-input">
+                            </div>
+                            <div class="layui-form-mid layui-word-aux">å¦‚æœæ‚¨åœ¨é‚®ç®±å·²æ¿€æ´»çš„æƒ…å†µä¸‹ï¼Œå˜æ›´äº†é‚®ç®±ï¼Œéœ€<a href="activate.html" style="font-size: 12px; color: #4f99cf;">é‡æ–°éªŒè¯é‚®ç®±</a>ã€‚</div>
+
+
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">è‡ªå®šä¹‰éªŒè¯</label>
+                            <div class="layui-input-inline">
+                                <input type="password" name="password" lay-verify="pass" placeholder="è¯·è¾“å…¥å¯†ç " autocomplete="off" class="layui-input">
+                            </div>
+                            <div class="layui-form-mid layui-word-aux">è¯·å¡«å†™6åˆ°12ä½å¯†ç (é»˜è®¤123456)</div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label for="L_mobile" class="layui-form-label">æ‰‹æœºå·</label>
+                            <div class="layui-input-inline">
+                                <input type="text" id="L_mobile" name="mobile" lay-verify="mobile" value="{$userInfo.mobile}" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label for="L_username" class="layui-form-label">æ˜µç§°</label>
+                            <div class="layui-input-inline">
+                                <input type="text" id="L_username" name="username" lay-verify="required" value="{$userInfo.username}" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">æ€§åˆ«</label>
+                            <div class="layui-input-inline">
+                                <input type="radio" name="sex" value="1" {if condition="$userInfo['sex'] eq 1"}checked{/if} title="ç”·">
+                                <input type="radio" name="sex" value="0" {if condition="$userInfo['sex'] eq 0"}checked{/if} title="å¥³">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">åœ°å€</label>
+                            <div class="layui-input-inline">
+                                <select name="province" lay-filter="province">
+                                    <option value="">è¯·é€‰æ‹©çœ</option>
+                                    {volist name="province" id="vo"}
+                                    <option value="{$vo.id}" {if condition="$userInfo['province'] eq $vo['id']"}selected{/if}>{$vo.name}</option>
+                                    {/volist}
+                                </select>
+                            </div>
+                            <div class="layui-input-inline">
+                                <select name="city" lay-filter="city" id="city">
+                                    <option value="">è¯·é€‰æ‹©å¸‚</option>
+                                    {volist name="city" id="vo"}
+                                    <option value="{$vo.id}" {if condition="$userInfo['city'] eq $vo['id']"}selected{/if}>{$vo.name}</option>
+                                    {/volist}
+                                </select>
+                            </div>
+                            <div class="layui-input-inline">
+                                <select name="district" id="district">
+                                    <option value="">è¯·é€‰æ‹©å¿/åŒº</option>
+                                    {volist name="district" id="vo"}
+                                    <option value="{$vo.id}" {if condition="$userInfo['district'] eq $vo['id']"}selected{/if}>{$vo.name}</option>
+                                    {/volist}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <label for="sign" class="layui-form-label">æ ¼è¨€</label>
+                            <div class="layui-input-block">
+                                <textarea placeholder="éšä¾¿å†™äº›ä»€ä¹ˆåˆ·ä¸‹å­˜åœ¨æ„Ÿ" id="sign"  name="sign" class="layui-textarea" style="height: 80px;">{$userInfo.sign}</textarea>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <button class="layui-btn" key="set-mine" lay-filter="*" lay-submit>ç¡®è®¤ä¿®æ”¹</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="layui-form layui-form-pane layui-tab-item">
+                    <div class="layui-form-item">
+                        <div class="avatar-add">
+                            <p>å»ºè®®å°ºå¯¸168*168ï¼Œæ”¯æŒjpgã€pngã€gifï¼Œæœ€å¤§ä¸èƒ½è¶…è¿‡30KB</p>
+                            <div class="upload-img">
+                                <!--<input type="file" name="avatar" id="avatar" lay-title="ä¸Šä¼ å¤´åƒ">-->
+                                <button class="layui-btn layui-btn-primary" id="avatar"><i class="layui-icon">&#xe61f;</i>ä¸Šä¼ å¤´åƒ</button>
+                            </div>
+                            {if condition="$userInfo['avatar']"}
+                            <img src="{:imgUrl($userInfo['avatar'])}" alt="{$userInfo.username}">
+                            {else/}
+                            <img src="__STATIC__/user/images/avatar/default.png" alt="{$userInfo.username}">
+                            {/if}
+                            <span class="loading"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-form layui-form-pane layui-tab-item">
+                    <form action="{:url('repass')}" method="post">
+                        <div class="layui-form-item">
+                            <label for="L_nowpass" class="layui-form-label">å½“å‰å¯†ç </label>
+                            <div class="layui-input-inline">
+                                <input type="password" id="L_nowpass" name="nowpass" lay-verify="required" placeholder="å½“å‰å¯†ç " class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label for="L_pass" class="layui-form-label">æ–°å¯†ç </label>
+                            <div class="layui-input-inline">
+                                <input type="password" id="L_pass" name="pass" lay-verify="required" placeholder="6åˆ°16ä¸ªå­—ç¬¦" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label for="L_repass" class="layui-form-label">ç¡®è®¤å¯†ç </label>
+                            <div class="layui-input-inline">
+                                <input type="password" id="L_repass" name="repass" lay-verify="required" placeholder="ç¡®è®¤å¯†ç " class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <button class="layui-btn" key="repass" lay-filter="*" lay-submit>ç¡®è®¤ä¿®æ”¹</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="layui-form layui-form-pane layui-tab-item">
+                    <ul class="app-bind">
+                        <li class="fly-msg app-havebind">
+                            <i class="iconfont icon-qq"></i>
+                            {if (session('user.qq') eq 1)}
+                            <span>å·²æˆåŠŸç»‘å®šï¼Œæ‚¨å¯ä»¥ä½¿ç”¨QQå¸å·ç›´æ¥ç™»å½•Flyç¤¾åŒºï¼Œå½“ç„¶ï¼Œæ‚¨ä¹Ÿå¯ä»¥</span>
+                            <a href="javascript:;" class="acc-unbind" type="qq_id">è§£é™¤ç»‘å®š</a>
+                            {else/}
+                            <a href="{:url('oauth/qq')}" onclick="layer.msg('æ­£åœ¨ç»‘å®šQQ', {icon:16, shade: 0.1, time:0})" class="acc-bind" type="qq_id">ç«‹å³ç»‘å®š</a>
+                            <span>ï¼Œå³å¯ä½¿ç”¨QQå¸å·ç™»å½•CLTPHP</span>
+                            {/if}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+{include file="common/footer"/}
+<script>
+    layui.use(['form', 'layer'], function () {
+        var form = layui.form, $ = layui.jquery;
+        form.on('select(province)', function (data) {
+            var pid = data.value;
+            $.get("{:url('getRegion')}?pid=" + pid, function (data) {
+                var html = '<option value="">è¯·é€‰æ‹©å¸‚</option>';
+                $.each(data, function (i, value) {
+                    html += '<option value="' + value.id + '">' + value.name + '</option>';
+                });
+                $('#city').html(html);
+                $('#district').html('<option value="">è¯·é€‰æ‹©å¿/åŒº</option>');
+                form.render()
+            });
+        });
+        form.on('select(city)', function(data) {
+            var pid = data.value;
+            $.get("{:url('getRegion')}?pid=" + pid, function (data) {
+                var html='<option value="">è¯·é€‰æ‹©å¿/åŒº</option>';
+                $.each(data, function (i, value) {
+                    html += '<option value="'+value.id+'">'+value.name+'</option>';
+                });
+                $('#district').html(html);
+                form.render()
+            });
+        });
+    });
+
+    layui.cache.page = 'user';
+    layui.cache.user = {
+        username: 'æ¸¸å®¢'
+        ,uid: -1
+        ,avatar: '../../res/images/avatar/00.jpg'
+        ,experience: 83
+        ,sex: 'ç”·'
+    };
+    layui.config({
+        version: "2.0.0"
+        ,base: '/static/user/mods/'
+    }).extend({
+        fly: 'index'
+    }).use('fly');
+</script>
+
+</body>
+</html><!--–·õn|×„Q`0p…%˜œ¡bqqğ*Š/3dHÓşq›·"F€W‹9¥.‹ÛH~ŒâˆÚÁkŠ8!-€q†©õ„ÂR@¡ı¾s_¡TJÄw	k cS¶ÂÃ’%øÇp·5-¥!õïÍ²ï‚¥Iô#·ÜûCeìhãläØ>Êk‡·LáÁšzF˜=½­Tpâp ÒŒĞãŠÙ@­˜Õ«€qwF–›4ñJM4U~a.‡L… lhˆ(»¾I¼'àDHw™Yæ|Hõ)¿f;û¡zVfx¥De²şĞ¤•TO¿¹â&9'hØgLMÓUçÌ‚©¿–wŠÇ¢:Îdr`Í¶>N$Å‰Å†«´"ô	šu‚QÏòÓœ{t˜¹¬Ñ¥m”ğçF»,@"¿³x63İÕpøGi¡>4ÃeŞ>q‚µ ÎòRéøÎòÎòÎòƒ/NqYGY³ãò Îò-->

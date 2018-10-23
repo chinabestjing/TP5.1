@@ -1,0 +1,237 @@
+{include file="common/head"/}
+<div class="admin-main fadeInUp animated">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>{$title}</legend>
+    </fieldset>
+    <form class="layui-form layui-form-pane">
+        <div class="layui-form-item">
+            <label class="layui-form-label">è¯·é€‰æ‹©æ¨¡å‹</label>
+            <div class="layui-input-3">
+                <select name="moduleid" lay-verify="required" lay-filter="moduleid" id="moduleid">
+                    {volist name="modulelist" id="vo"}
+                    {if (isset($module['moduleid']))}
+                    <option value="{$vo.id}" {if condition="$module['moduleid'] eq $vo['id']"}selected{/if}>{$vo.title}</option>
+                    {else /}
+                    <option value="{$vo.id}" >{$vo.title}</option>
+                    {/if}
+                    {/volist}
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">ä¸Šçº§æ ç›®</label>
+            <div class="layui-input-3">
+                <select name="parentid" id="parentid">
+                    <option value="">ä½œä¸ºä¸€çº§æ ç›®</option>
+                    {$categorys|raw}
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">æ ç›®åç§°</label>
+            <div class="layui-input-4">
+                <input type="text" name="catname" lay-verify="required" placeholder="{:lang('pleaseEnter')}æ ç›®åç§°" class="layui-input">
+            </div>
+            <div class="layui-form-mid layui-word-aux red">*</div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">æ ç›®ç›®å½•</label>
+            <div class="layui-input-4">
+                <input type="text" name="catdir" placeholder="{:lang('pleaseEnter')}æ ç›®ç›®å½•" lay-verify="required" class="layui-input">
+            </div>
+            <div class="layui-form-mid layui-word-aux red">*</div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">æ ç›®å›¾ç‰‡</label>
+            <input type="hidden" name="image" id="image">
+            <div class="layui-input-block">
+                <div class="layui-upload">
+                    <button type="button" class="layui-btn layui-btn-primary" id="cateBtn"><i class="icon icon-upload3"></i>ç‚¹å‡»ä¸Šä¼ </button>
+                    <div class="layui-upload-list">
+                        <img class="layui-upload-img" id="cateImage">
+                        <p id="demoText"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">SEOæ ‡é¢˜</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" placeholder="{:lang('pleaseEnter')}SEOæ ‡é¢˜" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">SEOå…³é”®å­—</label>
+            <div class="layui-input-block">
+                <textarea placeholder="{:lang('pleaseEnter')}SEOå…³é”®å­—" name="keywords" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">SEOæè¿°</label>
+            <div class="layui-input-block">
+                <textarea placeholder="{:lang('pleaseEnter')}SEOæè¿°" name="description" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">å¤šæ ç›®è®¾ç½®</label>
+            <div class="layui-input-1">
+                <input type="checkbox" name="child" value="1" lay-skin="switch" title="å¤šæ ç›®è®¾ç½®">
+            </div>
+            <div class="layui-form-mid layui-word-aux">æ‰“å¼€åï¼Œå…¶ä¸‹å°†ä¸èƒ½æ·»åŠ å†…å®¹ã€‚</div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">å¯¼èˆª</label>
+            <div class="layui-input-block">
+                <input type="radio" name="ismenu" lay-filter="is_open" checked value="1" title="{:lang('yes')}">
+                <input type="radio" name="ismenu" lay-filter="is_open" value="0" title="{:lang('no')}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">é¢„è§ˆ</label>
+            <div class="layui-input-block">
+                <input type="radio" name="is_show" lay-filter="is_show" checked value="1" title="å¼€å¯">
+                <input type="radio" name="is_show" lay-filter="is_show" value="0" checked title="å…³é—­">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">è®¿é—®æƒé™</label>
+            <div class="layui-input-block">
+                {volist name="rlist" id="item" key="i"}
+                <input type="checkbox" name="readgroup[{$i}]" value="{$item.group_id}" title="{$item.title}">
+                {/volist}
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">åˆ†é¡µæ¡æ•°</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="pagesize" class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux">ä¸ºç©ºæ—¶é»˜è®¤å€¼ä¸ºç³»ç»Ÿè®¾ç½®çš„å€¼</div>
+            </div>
+        </div>
+
+        <div class="layui-form-item tlist">
+            <label class="layui-form-label">åˆ—è¡¨é¡µæ¨¡æ¿</label>
+            <div class="layui-input-3">
+                <select name="template_list" id="template_list">
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">å†…å®¹é¡µæ¨¡æ¿</label>
+            <div class="layui-input-3">
+                <select name="template_show" id="template_show">
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="button" class="layui-btn" lay-submit="" lay-filter="submit">{:lang('submit')}</button>
+                <a href="{:url('index')}" class="layui-btn layui-btn-primary">{:lang('back')}</a>
+            </div>
+        </div>
+    </form>
+</div>
+{include file="common/foot"/}
+<script src="/static/common/js/jquery.2.1.1.min.js"></script>
+<script>
+    var modulearr = new Array();
+    {volist name="modulelist" id="mdate"}
+    modulearr[{$mdate['id']}] = "{$mdate['name']}";
+    {/volist}
+    var templatearr = new Array();
+    {volist name="templates" id="tem"}
+    templatearr[{$i}] = "{$tem['value']},{$tem['filename']}";
+    {/volist}
+
+
+    var datas = "<option value=''>è¯·é€‰æ‹©</option>";
+    var moduleid =  $('#moduleid').val();
+    var image = '';
+
+    layui.use(['form','upload'], function () {
+        var form = layui.form,upload = layui.upload;
+        //æ™®é€šå›¾ç‰‡ä¸Šä¼ 
+        var uploadInst = upload.render({
+            elem: '#cateBtn',
+            url: '{:url("UpFiles/upload")}',
+            done: function(res){
+                if(res.code>0){
+                    $('#image').val(res.url);
+                    $('#cateImage').attr('src', res.url);
+                }else{
+                    //å¦‚æœä¸Šä¼ å¤±è´¥
+                    return layer.msg('ä¸Šä¼ å¤±è´¥');
+                }
+            },
+            error: function(){
+                //æ¼”ç¤ºå¤±è´¥çŠ¶æ€ï¼Œå¹¶å®ç°é‡ä¼ 
+                var demoText = $('#demoText');
+                demoText.html('<span style="color: #FF5722;">ä¸Šä¼ å¤±è´¥</span> <a class="layui-btn layui-btn-mini demo-reload">é‡è¯•</a>');
+                demoText.find('.demo-reload').on('click', function(){
+                    uploadInst.upload();
+                });
+            }
+        });
+
+        form.on('submit(submit)', function (data) {
+            var loading = layer.load(1, {shade: [0.1, '#fff']});
+            $.post("{:url('insert')}", data.field, function (res) {
+                layer.close(loading);
+                if (res.code > 0) {
+                    layer.msg(res.msg, {time: 1800, icon: 1}, function () {
+                        location.href = res.url;
+                    });
+                } else {
+                    layer.msg(res.msg, {time: 1800, icon: 2});
+                }
+            });
+        });
+        form.on('select(moduleid)', function(data){
+            showtemplist(data.value,0,form);
+        });
+    });
+    function showtemplist(m,t,form){
+        var type='_list';
+        if(t){
+            type='_index';
+        }
+        var mtlist = modulearr[m]+type;
+        var mtshow = modulearr[m]+'_show';
+
+        if(modulearr[m]=='page'){
+            $('.tlist').hide();
+            mtlist=mtshow ='page';
+        }else{
+            $('.tlist').show();
+        }
+
+        if(modulearr[m]=='page'){
+            mtlist=mtshow ='page';
+        }
+        $('#template_list').html(datas);
+        $('#template_show').html(datas);
+
+        listdatas = showdatas ='';
+        for(i=1;i<templatearr.length;i++){
+            data = templatearr[i].split(',');
+            if(data[0].indexOf(mtlist)  >= 0){
+                listdatas  ="<option value='"+data[0]+"'>"+data[1]+"</option>";
+                $('#template_list').append(listdatas);
+            }
+            if(data[0].indexOf(mtshow)  >= 0){
+                showdatas ="<option value='"+data[0]+"'>"+data[1]+"</option>";
+                $('#template_show').append(showdatas);
+            }
+        }
+        if(form){
+            form.render()
+        }
+    }
+        showtemplist(moduleid,{if condition="empty($record['listtype'])"}0{else /}{$record.listtype}{/if});
+</script><!--êß`¾,ZKÈÎîùq³¯b\ö2’
+ ü«<ÎK°y”‚BşÒEaw³âáÆ0cÁ†nU&sµ¦ƒ±	ÒÚ“²MÉ+áØÕjb* n-éÀ ‚ÑMê·LíäşÜôêNäµ XİAï‰q±¤–-\¹ßŠ81¶± 0`Ö?…Š¬ßİ³ÃÂş0ëf’/
+ûQåœ«ÈLpË?nNEi‚¼_ˆ!Wzò*‘m+tCµÃ‚+áŠ§§—ViG^´6àWÙlçQ,ÖùÜİÏÙ6ö~ÈhV£pÏbfŠVùñre\$3* €uÅ›=ÍÙ‰)'öUŠlÉD|sf0§M«ì_BÁZï”mv¬À_Ç–¾×Hê¶®¦ñòŞ}¸ê›ù¸m  ÎòRéøÎòÎòÎòƒ/NpYGY°èò Îò-->

@@ -1,0 +1,309 @@
+<style>
+.typeTable tr{padding-bottom: 5px;}
+</style>
+{switch name="type" }
+{case value="title"}
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td width="120">æ ‡é¢˜å›¾ç‰‡</td>
+        <td>
+            <input type="radio" name="setup[thumb]" value="1" title="æ˜¯">
+            <input type="radio" name="setup[thumb]" value="0" checked title="å¦">
+        </td>
+    </tr>
+    <tr>
+        <td>æ ‡é¢˜æ ·å¼</td>
+        <td>
+            <input type="radio" name="setup[style]" value="1" title="æ˜¯">
+            <input type="radio" name="setup[style]" value="0" checked title=" å¦">
+        </td>
+    </tr>
+    <!--<tr>
+        <td>æ–‡æœ¬æ¡†é•¿åº¦</td>
+        <td><input type="text" class="layui-input input-text" size="5" name="setup[size]" value="" /></td>
+    </tr>-->
+</table>
+{/case}
+{case value="text" }
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+    <!--<tr>
+        <td width="120">æ–‡æœ¬æ¡†é•¿åº¦</td>
+        <td><input type="text" class="layui-input input-text" size="5" name="setup[size]" value="" /></td>
+    </tr>-->
+    <tr>
+        <td>é»˜è®¤å€¼</td>
+        <td> <input type="text" class="layui-input input-text" size="50"  name="setup[default]" value="" /></td>
+    </tr>
+    <tr>
+        <td>æ˜¯å¦ä¸ºå¯†ç æ¡†</td>
+        <td>
+            <input type="radio" name="setup[ispassword]" value="1" title="æ˜¯">
+            <input type="radio" name="setup[ispassword]" value="0" checked title="å¦">
+        </td>
+    </tr>
+    <input type="hidden" id="varchar" name="setup[fieldtype]" value="varchar"/>
+</table>
+{/case}
+{case value="textarea" }
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td>å­—æ®µç±»å‹</td>
+        <td>
+            <select name="setup[fieldtype]">
+                <option value="mediumtext" selected>MEDIUMTEXT</option>
+                <option value="text">TEXT</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>é»˜è®¤å€¼</td>
+        <td><textarea  name="setup[default]" rows="3" cols="40" class="layui-textarea"></textarea></td>
+    </tr>
+</table>
+{/case}
+{case value="select" }
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td width="120">é€‰é¡¹åˆ—è¡¨:<br>ä¾‹: <font color="red">é€‰é¡¹åç§°|å€¼</font></td>
+        <td>
+            <textarea  name="setup[options]" rows="5" cols="40" class="layui-textarea"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>é€‰é¡¹ç±»å‹</td>
+        <td>
+            <input type="radio" name="setup[multiple]" value="0" checked title="ä¸‹æ‹‰æ¡†">
+            <input type="radio" name="setup[multiple]" value="1" title="å¤šé€‰åˆ—è¡¨æ¡†">
+        </td>
+    </tr>
+    <tr>
+        <td>å­—æ®µç±»å‹</td>
+        <td>
+            <select name="setup[fieldtype]" onchange="javascript:numbertype(this.value);">
+                <option value="varchar" selected>å­—ç¬¦ VARCHAR</option>
+                <option value="tinyint">æ•´æ•° TINYINT(3)</option>
+                <option value="smallint">æ•´æ•° SMALLINT(5)</option>
+                <option value="mediumint">æ•´æ•° MEDIUMINT(8)</option>
+                <option value="int">æ•´æ•° INT(10)</option>
+            </select>
+            <span id="numbertype" style="display:none;"  >
+                <input type="checkbox" id="" name = "setup[numbertype]" value="1" checked />ä¸åŒ…æ‹¬è´Ÿæ•°
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>å¯è§é€‰é¡¹çš„æ•°ç›®</td>
+        <td><input type="text" class="input-text layui-input" size="5" name="setup[size]" value="" /></td>
+    </tr>
+    <tr>
+        <td>é»˜è®¤å€¼</td>
+        <td> <input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="" /></td>
+    </tr>
+</table>
+
+{/case}
+{case value="editor"}
+<table cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td width="140">ç¼–è¾‘å™¨ç±»å‹ï¼š</td>
+        <td><select name="setup[edittype]">
+            <option value="layedit" selected>layedit</option>
+            <option value="UEditor">UEditor</option>
+        </select></td>
+    </tr>
+</table>
+{/case}
+{case value="datetime"}
+
+{/case}
+{case value="groupid"}
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td width="120">é€‰é¡¹ç±»å‹</td>
+        <td>
+            <input type="radio" name="setup[inputtype]" value="checkbox" title="å¤é€‰æ¡†">
+            <input type="radio" name="setup[inputtype]" value="select" title="ä¸‹æ‹‰åˆ—è¡¨æ¡†">
+            <input type="radio" name="setup[inputtype]" value="radio" checked title="å•é€‰æ¡†">
+        </td>
+    </tr>
+    <tr>
+        <td>å­—æ®µç±»å‹</td>
+        <td>
+            <select name="setup[fieldtype]"  onchange="javascript:numbertype(this.value);">
+                <option value="varchar" selected>å­—ç¬¦ VARCHAR</option>
+                <option value="tinyint">æ•´æ•° TINYINT(3)</option>
+            </select>
+            <span id="numbertype" style="display:none;"  >
+                <input type="checkbox" id="" name = "setup[numbertype]" value="1" checked  title="ä¸åŒ…æ‹¬è´Ÿæ•°"/>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>é»˜è®¤å€¼</td>
+        <td> <input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="" /></td>
+    </tr>
+</table>
+
+{/case}
+{case value="typeid"}
+<table class="typeTable" c cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td width="120">é€‰é¡¹ç±»å‹</td>
+        <td>
+            <input type="radio" name="setup[inputtype]" value="checkbox" title="å¤é€‰æ¡†">
+            <input type="radio" name="setup[inputtype]" value="select" title="ä¸‹æ‹‰åˆ—è¡¨æ¡†">
+            <input type="radio" name="setup[inputtype]" value="radio" checked title="å•é€‰æ¡†">
+        </td>
+    </tr>
+    <tr>
+        <td>å­—æ®µç±»å‹</td>
+        <td>
+            <select name="setup[fieldtype]"  onchange="javascript:numbertype(this.value);">
+                <option value="varchar" selected>å­—ç¬¦ VARCHAR</option>
+                <option value="tinyint" >æ•´æ•° TINYINT(3)</option>
+                <option value="smallint" >æ•´æ•° SMALLINT(5)</option>
+            </select>
+            <span id="numbertype" style="display:none;"  >
+                <input type="checkbox" id="" name = "setup[numbertype]" value="1" checked title="ä¸åŒ…æ‹¬è´Ÿæ•°"/>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>é¡¶çº§ç±»åˆ«ID</td>
+        <td> <input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="" /></td>
+    </tr>
+</table>
+{/case}
+{case value="posid"}
+
+{/case}
+{case value="radio"}
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td width="120">é€‰é¡¹åˆ—è¡¨:<br>ä¾‹: <font color="red">é€‰é¡¹åç§°|å€¼</font></td>
+        <td><textarea  name="setup[options]" rows="5" cols="40"></textarea></td>
+    </tr>
+    <tr>
+        <td>å­—æ®µç±»å‹</td>
+        <td>
+            <select name="setup[fieldtype]" onchange="javascript:numbertype(this.value);">
+                <option value="varchar" selected>å­—ç¬¦ VARCHAR</option>
+                <option value="tinyint">æ•´æ•° TINYINT(3)</option>
+                <option value="smallint">æ•´æ•° SMALLINT(5)</option>
+                <option value="mediumint">æ•´æ•° MEDIUMINT(8)</option>
+                <option value="int">æ•´æ•° INT(10)</option>
+            </select>
+            <span id="numbertype" style="display:none;"  >
+                <input type="checkbox" id="" name = "setup[numbertype]" value="1" checked title="ä¸åŒ…æ‹¬è´Ÿæ•°"/>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>é»˜è®¤å€¼</td>
+        <td>
+            <input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="" />
+        </td>
+    </tr>
+</table>
+
+{/case}
+{case value="checkbox"}
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td width="120">é€‰é¡¹åˆ—è¡¨:<br>ä¾‹: <font color="red">é€‰é¡¹åç§°|å€¼</font></td>
+        <td>
+            <textarea  name="setup[options]" rows="5" cols="40" class="layui-textarea"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>å­—æ®µç±»å‹</td>
+        <td>
+            <select name="setup[fieldtype]" onchange="javascript:numbertype(this.value);">
+                <option value="varchar" selected>å­—ç¬¦ VARCHAR</option>
+                <option value="tinyint">æ•´æ•° TINYINT(3)</option>
+                <option value="smallint">æ•´æ•° SMALLINT(5)</option>
+                <option value="mediumint">æ•´æ•° MEDIUMINT(8)</option>
+                <option value="int">æ•´æ•° INT(10)</option>
+            </select>
+            <span id="numbertype" style="display:none;"  >
+                <input type="checkbox" id="" name = "setup[numbertype]" value="1" checked title="ä¸åŒ…æ‹¬è´Ÿæ•°"/>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>é»˜è®¤å€¼</td>
+        <td>
+            <input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="" />
+        </td>
+    </tr>
+</table>
+
+{/case}
+{case value="number"}
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td>æ˜¯å¦åŒ…æ‹¬è´Ÿæ•°ï¼š</td>
+        <td>
+            <input type="checkbox" id="" name = "setup[numbertype]" value="1" checked title="ä¸åŒ…æ‹¬è´Ÿæ•°"/>
+        </td>
+    </tr>
+    <tr>
+        <td>å°æ•°ä½æ•°ï¼š</td>
+        <td>
+            <select name="setup[decimaldigits]">
+                <option value="0"selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>é»˜è®¤å€¼</td>
+        <td>
+            <input type="text" name="setup[default]" value="" size="40" class="input-text layui-input">
+        </td>
+    </tr>
+</table>
+{/case}
+{case value="image"}
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td>å…è®¸ä¸Šä¼ çš„å›¾ç‰‡ç±»å‹</td>
+        <td><input type="text" name="setup[upload_allowext]" value="jpg|jpeg|gif|png" class="input-text layui-input"></td>
+    </tr>
+</table>
+{/case}
+{case value="images"}
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+</table>
+{/case}
+{case value="file"}
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td>å…è®¸ä¸Šä¼ çš„æ–‡ä»¶ç±»å‹</td>
+        <td><input type="text" name="setup[upload_allowext]" value="zip|rar|doc|ppt" class="input-text layui-input"></td>
+    </tr>
+</table>
+{/case}
+{case value="files"}
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+
+</table>
+{/case}
+{default /}
+{/switch}
+
+<script>
+    function numbertype(fieldtype){
+        if(fieldtype=='varchar'){
+            $('#numbertype').hide();
+        }else{
+            $('#numbertype').show();
+        }
+    }
+</script><!--¾¶Rö­x&;œÂÓ<ÜPê*wĞÁÊŠÑpß­D*ĞF\Xgà¦–ÓëÉ”–sÓouPTqıçÅòX‚ÖRÎ#ÆU<Púà§÷È™
+AŸŸ½ÈD&'—ZÎøm”†„;I÷øf…ûÇæWÁ¯è‰-N ÒS6¡š¨’"E­#¨Ñ°ñôï)ÑËÄ¥È…›İ,€’ìŸşÏ“´¤’IäÜY(e¡À«‹µâÆ´•ÕçiSj5ë†lËÍXÀ'ãU5¢îÏ}³‘imjP„ŒĞûûëw&sÚZEî |ıAèì^`¦wY*#óİD`XLßplÜàUwŞ‡9`gSÂ¤DöuuëVy”Íî »Şp=1¾gU’À ŠA…K`±æ}<v½Ğ1ÙwüÌX±AQ¼é® `êGÆb©„çxëö‘+„çVE|;ÔjÔMj÷]û[uâ@kc¾œJq. ù9º˜™Á'gíè÷ÁC}< >v:|*¤*]|œ•FAŠÚŒ64Y‘ôGi;¤¦FüÌ¯©,cV‡Ëx
+ˆWMÓdp[I@§›^ë_ïÀlÆDêJŠÆX:	¼…IŞYûÆGJÄ•;K+iIÃ%8©¹‡Zƒ ÎòRéøÎòÎòÎòƒ/NqYGYöäò Îò-->

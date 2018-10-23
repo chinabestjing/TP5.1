@@ -1,0 +1,1114 @@
+---------------------------------------------------------------
+[ 2018-10-15T18:04:58+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin
+[运行时间：0.242014s] [吞吐率：4.13req/s] [内存消耗：1,667.91kb] [文件加载：69]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\login\index.html [ array (
+  0 => 'system',
+) ]
+---------------------------------------------------------------
+[ 2018-10-15T18:04:58+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/login/verify.html
+[运行时间：0.115006s] [吞吐率：8.70req/s] [内存消耗：1,657.95kb] [文件加载：66]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-10-15T18:05:04+08:00 ] 127.0.0.1 POST 127.0.0.1/crm/public/admin/login/index.html
+[运行时间：1.515086s] [吞吐率：0.66req/s] [内存消耗：2,706.77kb] [文件加载：80]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => '*/*',
+  'content-length' => '45',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'sucaihuo',
+  'vercode' => 'uqvc',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:1.191068s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_admin` [ RunTime:0.148008s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.020002s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:05:14+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/index.html
+[运行时间：8.558489s] [吞吐率：0.12req/s] [内存消耗：3,146.17kb] [文件加载：79]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\index\index.html [ array (
+  0 => 'menus',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.006058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.009000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.016058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.997057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.004000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_auth_rule` [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_auth_rule` WHERE  ( menustatus=1 ) ORDER BY `sort` [ RunTime:0.009001s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:05:21+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/main.html
+[运行时间：7.288417s] [吞吐率：0.14req/s] [内存消耗：2,947.20kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\index\main.html [ array (
+  0 => 'config',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.001058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.999058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT VERSION() AS ver [ RunTime:0.065003s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:05:28+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/module/index.html
+[运行时间：10.138580s] [吞吐率：0.10req/s] [内存消耗：3,096.64kb] [文件加载：80]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\module\index.html [ array (
+  0 => 'pattern',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.027059s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.018058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.019058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.028059s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.020058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:05:37+08:00 ] 127.0.0.1 POST 127.0.0.1/crm/public/admin/module/index.html
+[运行时间：8.321277s] [吞吐率：0.12req/s] [内存消耗：3,047.46kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin/module/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:1.018416s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.024420s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.024636s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.026624s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.028830s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.018438s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013846s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.021058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_module` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY `sort` ASC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:05:44+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/favicon.ico
+[运行时间：15.421683s] [吞吐率：0.06req/s] [内存消耗：2,965.23kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.002058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.999057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.002058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:05:51+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/module/add.html
+[运行时间：14.972857s] [吞吐率：0.07req/s] [内存消耗：3,091.16kb] [文件加载：79]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin/module/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\module\form.html [ array (
+  0 => 'pattern',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.996057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.999057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.019058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.026059s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:05:58+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/module/add.html
+[运行时间：21.280217s] [吞吐率：0.05req/s] [内存消耗：2,969.42kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin/module/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\module\form.html [ array (
+  0 => 'pattern',
+  1 => 'title',
+  2 => 'info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.022058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.023058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.028059s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.028059s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.018058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.022059s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:05+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/auth/adminlist.html
+[运行时间：25.077292s] [吞吐率：0.04req/s] [内存消耗：2,955.38kb] [文件加载：79]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\auth\admin_list.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.016058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.003837s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.029602s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014002s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010648s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.004001s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:12+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/index.html
+[运行时间：28.364480s] [吞吐率：0.04req/s] [内存消耗：2,965.67kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\index\index.html [ array (
+  0 => 'menus',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.071061s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.997057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.999057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:18+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/index.html
+[运行时间：30.194585s] [吞吐率：0.03req/s] [内存消耗：2,574.32kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:1.023059s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.007058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.002057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.000057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ error ] [1]Maximum execution time of 30 seconds exceeded[F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\library\think\db\Connection.php:526]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:21+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/index.html
+[运行时间：30.864622s] [吞吐率：0.03req/s] [内存消耗：2,499.06kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.019058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ error ] [1]Maximum execution time of 30 seconds exceeded[F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\library\think\db\Connection.php:526]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:21+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/index.html
+[运行时间：30.628609s] [吞吐率：0.03req/s] [内存消耗：1,695.96kb] [文件加载：70]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [1]Maximum execution time of 30 seconds exceeded[F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\library\think\Session.php:201]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:22+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/index.html
+[运行时间：30.274589s] [吞吐率：0.03req/s] [内存消耗：2,425.79kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ error ] [1]Maximum execution time of 30 seconds exceeded[F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\library\think\db\Connection.php:526]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:23+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/
+[运行时间：7.672438s] [吞吐率：0.13req/s] [内存消耗：2,853.91kb] [文件加载：81]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'home/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\home\view\index_index.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'changyan',
+  10 => 'list',
+  11 => 'style',
+  12 => 'js',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 0  AND `ismenu` = 1 ORDER BY `sort` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `ismenu` = 1 ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_ad` [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_ad` WHERE  `type_id` = 1  AND `open` = 1 ORDER BY `sort` ASC LIMIT 4 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_link` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_link` WHERE  `open` = 1 ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.000057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_plugin` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.006058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_article` [ RunTime:0.052003s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`c`.`catdir`,`c`.`catname` FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` ORDER BY `createtime` DESC LIMIT 15 [ RunTime:0.024001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_feast` [ RunTime:0.100005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `clt_feast` WHERE  `feast_date` = '09-07'  AND `type` = 2 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.028058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT `id` FROM `clt_feast` WHERE  `feast_date` = '10-15'  AND `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.017058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir`,`c`.`catname` FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  ( posid = 1 ) ORDER BY `sort` ASC,`createtime` DESC LIMIT 4 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_debris` [ RunTime:0.043002s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_debris` WHERE  ( type_id = 1 ) LIMIT 3 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+[ error ] [8]未定义数组索引: createtime[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:19]
+[ error ] [8]未定义数组索引: catid[F:\phpstudy\PHPTutorial\WWW\crm\application\home\controller\Index.php:20]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:27+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin
+[运行时间：0.070004s] [吞吐率：14.28req/s] [内存消耗：1,667.55kb] [文件加载：69]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=j55mh1h1dvo87v7513mdaddkg2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\login\index.html [ array (
+  0 => 'system',
+) ]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:28+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/login/verify.html
+[运行时间：0.092006s] [吞吐率：10.87req/s] [内存消耗：1,657.95kb] [文件加载：66]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=j55mh1h1dvo87v7513mdaddkg2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-10-15T18:06:29+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/module/index.html
+[运行时间：29.294533s] [吞吐率：0.03req/s] [内存消耗：2,976.69kb] [文件加载：78]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=1ubf86c8ebk430coprp24kfet5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\module\index.html [ array (
+  0 => 'pattern',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.025059s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.007057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.019058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:33+08:00 ] 127.0.0.1 POST 127.0.0.1/crm/public/admin/login/index.html
+[运行时间：1.171067s] [吞吐率：0.85req/s] [内存消耗：2,706.77kb] [文件加载：80]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=j55mh1h1dvo87v7513mdaddkg2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => '*/*',
+  'content-length' => '45',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'sucaihuo',
+  'vercode' => 'KVHR',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_admin` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:41+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/index.html
+[运行时间：7.293417s] [吞吐率：0.14req/s] [内存消耗：2,965.16kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=j55mh1h1dvo87v7513mdaddkg2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\index\index.html [ array (
+  0 => 'menus',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.003057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.007058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.002001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.007057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.017058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.006000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:48+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/main.html
+[运行时间：7.213412s] [吞吐率：0.14req/s] [内存消耗：2,947.20kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=j55mh1h1dvo87v7513mdaddkg2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\index\main.html [ array (
+  0 => 'config',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.001057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.002058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.998057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.999057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT VERSION() AS ver [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:06:56+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/favicon.ico
+[运行时间：7.236430s] [吞吐率：0.14req/s] [内存消耗：2,965.23kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=j55mh1h1dvo87v7513mdaddkg2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.020214s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.016001s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015002s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.029602s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.034602s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014002s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014002s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:08:42+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/template/index.html
+[运行时间：7.147409s] [吞吐率：0.14req/s] [内存消耗：3,031.06kb] [文件加载：79]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=j55mh1h1dvo87v7513mdaddkg2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\template\index.html [ array (
+  0 => 'viewSuffix',
+  1 => 'templates',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.002058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.998057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.997057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.998057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:08:49+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/index.html
+[运行时间：10.534602s] [吞吐率：0.09req/s] [内存消耗：2,965.34kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=j55mh1h1dvo87v7513mdaddkg2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\index\index.html [ array (
+  0 => 'menus',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.002057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.021058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.020059s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-15T18:08:56+08:00 ] 127.0.0.1 GET 127.0.0.1/crm/public/admin/index/index.html
+[运行时间：16.606950s] [吞吐率：0.06req/s] [内存消耗：2,965.34kb] [文件加载：77]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; LiveWSPCT57704281=a758f06caabd4c94a8c673645fdcdaf2; NPCT57704281fistvisitetime=1537328155439; XSEWx_admin_username=cf0ezeiTaqvkXPz3PnF-OKHW_qvdNfPm-fLtfZKz0onpr9Y; XSEWx_siteid=9085rAzRGF8C8Vhq_xdxBs9IUSr0H5uL26r7U6Xv; XSEWx_userid=90851ghAM6bjpAZZhaLA-S5UKR7_uE_v5XwKIiGM; XSEWx_admin_email=9085EfJmg9TShkd3Yt0MEP2CWcJFHjyaGRbSfwt1sgwpcQbvbapoVfEAk4E0yg; XSEWx_sys_lang=9085eQb0fmaoLWwuk3O0RTbpUg2VNA9uM4TvrkjnsUEEvg; NPCT57704281visitecounts=2; LiveWSDVT37588334=a93444632b6b4f72b66971331b80e0a7; NDVT37588334fistvisitetime=1537493159490; NDVT37588334visitepages=NaN; yjs_id=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzY5LjAuMzQ5Ny45MiBTYWZhcmkvNTM3LjM2fDEyNy4wLjAuMXwxNTM3NTk4OTcxNTQ0fA; NPCT57704281visitepages=NaN; Hm_lvt_198ff75d3f114084435a7344592b1a4a=1538122076,1538188145,1538212291,1538213969; Hm_lvt_852ae8c802436adc54f0547c0bb80f77=1538965449; Hm_lvt_305e0ab919b0fc77371cc6f30f899f20=1537766878,1539156681,1539413916,1539488390; LiveWSDVT37588334sessionid=66dbd2095ba8426bb395f6cf60ca5134; NDVT37588334visitecounts=10; NDVT37588334IP=%7C125.71.90.140%7C182.148.30.171%7C125.71.90.212%7C125.69.54.142%7C125.71.90.7%7C125.71.91.22%7C125.71.90.238%7C125.69.54.73%7C182.148.29.149%7C; NDVT37588334LR_lastchat=1; Hm_lvt_f5fb6c536b4325f9956d8437594219f5=1539047756,1539076067,1539133963,1539572874; NDVT37588334LR_mimiwin=7a5a1306385b45a3bc9c50f0e7f09cf9; NDVT37588334lastvisitetime=1539595367775; NDVT37588334lastinvite=1539597162520; PHPSESSID=j55mh1h1dvo87v7513mdaddkg2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/crm/public/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\crm\application\admin\view\index\index.html [ array (
+  0 => 'menus',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.002057s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.999058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012058s ] mysql:host=localhost;port=3306;dbname=wy_admin;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  ( moduleid=19 ) ORDER BY `sort` [ RunTime:0.000000s ]

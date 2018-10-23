@@ -1,0 +1,4 @@
+<?php
+//000000003600
+ exit();?>
+think_serialize:a:3:{i:0;a:9:{s:5:"ad_id";i:15;s:4:"name";s:18:"成都唯意装饰";s:7:"type_id";i:1;s:3:"pic";s:54:"/uploads/20180611/c09ce57b7b5264ccbefef44c2591117b.png";s:3:"url";s:21:"http://www.cdwyzx.com";s:7:"addtime";i:1480909037;s:4:"sort";i:1;s:4:"open";i:1;s:7:"content";s:18:"成都唯意装饰";}i:1;a:9:{s:5:"ad_id";i:17;s:4:"name";s:18:"成都唯意装饰";s:7:"type_id";i:1;s:3:"pic";s:54:"/uploads/20180611/25e5f5a08933130f026a6119666b44a8.png";s:3:"url";s:21:"http://www.cdwyzx.com";s:7:"addtime";i:1481788850;s:4:"sort";i:2;s:4:"open";i:1;s:7:"content";s:18:"成都唯意装饰";}i:2;a:9:{s:5:"ad_id";i:18;s:4:"name";s:18:"成都唯意装饰";s:7:"type_id";i:1;s:3:"pic";s:54:"/uploads/20180611/814e5f76ef5dce49dfd3dce771631ecf.png";s:3:"url";s:21:"http://www.cdwyzx.com";s:7:"addtime";i:1481788869;s:4:"sort";i:3;s:4:"open";i:1;s:7:"content";s:18:"成都唯意装饰";}}

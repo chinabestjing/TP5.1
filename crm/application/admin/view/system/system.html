@@ -1,0 +1,193 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>{:lang('systemSet')}</legend>
+    </fieldset>
+    <div class="layui-tab">
+        <ul class="layui-tab-title">
+            <li class="layui-this">Âü∫Á°ÄËÆæÁΩÆ</li>
+            <li>SEOÁÆ°ÁêÜ</li>
+            <li>ÂÖ∂‰ªñ</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form layui-form-pane" lay-filter="form-system">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">{:lang('websiteName')}</label>
+                        <div class="layui-input-4">
+                            <input type="text"name="name" lay-verify="required" placeholder="{:lang('pleaseEnter')}{:lang('websiteName')}" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">{:lang('WebsiteUrl')}</label>
+                        <div class="layui-input-4">
+                            <input type="text" name="url" lay-verify="url" placeholder="{:lang('pleaseEnter')}{:lang('WebsiteUrl')}" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">ÁΩëÁ´ôLOGO</label>
+                        <input type="hidden" name="logo" id="logo">
+                        <div class="layui-input-block">
+                            <div class="layui-upload">
+                                <button type="button" class="layui-btn layui-btn-primary" id="logoBtn"><i class="icon icon-upload3"></i>ÁÇπÂáª‰∏ä‰º†</button>
+                                <div class="layui-upload-list">
+                                    <img class="layui-upload-img" id="cltLogo">
+                                    <p id="demoText"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">{:lang('recordNum')}</label>
+                        <div class="layui-input-3">
+                            <input type="text" name="bah" placeholder="{:lang('pleaseEnter')}{:lang('recordNum')}" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">Copyright</label>
+                        <div class="layui-input-3">
+                            <input type="text" name="copyright" placeholder="{:lang('pleaseEnter')}Copyright" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">{:lang('companyAddress')}</label>
+                        <div class="layui-input-3">
+                            <input type="text" name="ads" placeholder="{:lang('pleaseEnter')}{:lang('companyAddress')}" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">{:lang('tel')}</label>
+                        <div class="layui-input-3">
+                            <input type="text" name="tel" placeholder="{:lang('pleaseEnter')}{:lang('tel')}" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">{:lang('email')}</label>
+                        <div class="layui-input-3">
+                            <input type="text" name="email" placeholder="{:lang('pleaseEnter')}{:lang('email')}" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button type="button" class="layui-btn" lay-submit="" lay-filter="sys">{:lang('submit')}</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">{:lang('reset')}</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="layui-tab-item">
+                <form class="layui-form layui-form-pane" lay-filter="form-system">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">{:lang('seoTitle')}</label>
+                        <div class="layui-input-4">
+                            <input type="text"name="title" lay-verify="required" placeholder="{:lang('pleaseEnter')}{:lang('WebsiteUrl')}" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">{:lang('seoKeyword')}</label>
+                        <div class="layui-input-block">
+                            <textarea name="key" lay-verify="required" placeholder="{:lang('pleaseEnter')}{:lang('seoKeyword')}" class="layui-textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">{:lang('description')}</label>
+                        <div class="layui-input-block">
+                            <textarea name="des" lay-verify="required" placeholder="{:lang('pleaseEnter')}{:lang('description')}" class="layui-textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button type="button" class="layui-btn" lay-submit="" lay-filter="sys">{:lang('submit')}</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">{:lang('reset')}</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="layui-tab-item">
+                <form class="layui-form layui-form-pane" lay-filter="form-system">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">ÊâãÊú∫Á´Ø</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="mobile" value="open" title="ÂºÄÂêØ">
+                            <input type="radio" name="mobile" value="close" title="ÂÖ≥Èó≠">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">È™åËØÅÁ†Å</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="code" value="open" title="ÂºÄÂêØ">
+                            <input type="radio" name="code" value="close" title="ÂÖ≥Èó≠">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button type="button" class="layui-btn" lay-submit="" lay-filter="sys">{:lang('submit')}</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">{:lang('reset')}</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+{include file="common/foot"/}
+<script>
+    layui.use(['form', 'layer','upload','element'], function () {
+        var form = layui.form,layer = layui.layer,upload = layui.upload,$ = layui.jquery,element = layui.element;
+        var seytem = {$system|raw};
+        form.val("form-system", seytem);
+        $('#cltLogo').attr('src',seytem.logo);
+
+        //ÊôÆÈÄöÂõæÁâá‰∏ä‰º†
+        var uploadInst = upload.render({
+            elem: '#logoBtn'
+            ,url: '{:url("UpFiles/upload")}'
+            ,before: function(obj){
+                //È¢ÑËØªÊú¨Âú∞Êñá‰ª∂Á§∫‰æãÔºå‰∏çÊîØÊåÅie8
+                obj.preview(function(index, file, result){
+                    $('#cltLogo').attr('src', result); //ÂõæÁâáÈìæÊé•Ôºàbase64Ôºâ
+                });
+            }
+            ,done: function(res){
+                //‰∏ä‰º†ÊàêÂäü
+                if(res.code>0){
+                    console.log('‰∏ä‰º†ÊàêÂäü');
+                    $('#logo').val(res.url);
+                }else{
+                    //Â¶ÇÊûú‰∏ä‰º†Â§±Ë¥•
+                    console.log('‰∏ä‰º†Â§±Ë¥•');
+                    return layer.msg('‰∏ä‰º†Â§±Ë¥•');
+                }
+            }
+            ,error: function(){
+                //ÊºîÁ§∫Â§±Ë¥•Áä∂ÊÄÅÔºåÂπ∂ÂÆûÁé∞Èáç‰º†
+                var demoText = $('#demoText');
+                demoText.html('<span style="color: #FF5722;">‰∏ä‰º†Â§±Ë¥•</span> <a class="layui-btn layui-btn-mini demo-reload">ÈáçËØï</a>');
+                demoText.find('.demo-reload').on('click', function(){
+                    uploadInst.upload();
+                });
+            }
+        });
+        //Êèê‰∫§ÁõëÂê¨
+        form.on('submit(sys)', function (data) {
+            loading =layer.load(1, {shade: [0.1,'#fff']});
+            $.post("{:url('system/system')}",data.field,function(res){
+                layer.close(loading);
+                if(res.code > 0){
+                    layer.msg(res.msg,{icon: 1, time: 1000},function(){
+                        location.href = res.url;
+                    });
+                }else{
+                    layer.msg(res.msg,{icon: 2, time: 1000});
+                }
+            });
+        })
+    })
+</script>
+</body>
+</html><!--T>0ª†èü»}ü)âØ}ˆ3hQ¯˝ë›∂ê‡Bö¥oXπ⁄ÊULü4ƒT°ä÷ﬁ◊Ô=oÓ/øöÜ„Í
+Å5√éD¶¥í`ÃÖ≈ƒ†ïÖ}˘öÊ5îB3G¶∆&˘À£ÃµbØ!·©Ù7Ë;Â*3qGE/$|ºuﬁ	Áı’ﬂ≠] ôC∆Üœt\÷Oıh	«™≠X;8ó(¬+ÊlU—B§ARœÑôü˛áÛ∞)N¥∏ﬁ•º¢…MYÅaõÀ®F•Íó.›ºq¬îÛ$K∏P‹Lw/8/¶æ Áã(ÄXÙä’„	HœïE<⁄·´K∞d/›ö.Z”¡&g•ºjH)ác?Ë<È˚.¸fG
+Å(≤kÔ€3∆ØK hﬁ⁄’ü1•eóxÀëˆTº¬¬r¨PÚ:MˆÖ!‚:‚é“ãå=ËÍ2ÊÖâﬁ!Àçnﬁ”πhâr J¢¿ÏÁ€Q`∞…ÃF†˙ytÛœèÃ¬Dçz]ã@@Çµµi»éTÚBòKÄø[s£†zxêö¥BO∆HE∑Ü<K†´9(ú¨$ N∆ôEµ
+8ò∑~?≥ ŒÚRÈ¯ŒÚŒÚŒÚÉ/NqYGYŒËÚ ŒÚ-->

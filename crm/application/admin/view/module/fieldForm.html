@@ -1,0 +1,159 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit" ng-app="hd" ng-controller="ctrl">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>{$title}</legend>
+    </fieldset>
+    <form class="layui-form layui-form-pane">
+       <div class="layui-form-item">
+            <label class="layui-form-label">å­—æ®µç±»å‹</label>
+            <div class="layui-input-4">
+                <select id="type" name="type" lay-filter="type" ng-model="field.type" class="required" lay-verify="required" {if condition="ACTION_NAME eq 'fieldedit'"}disabled{/if}>
+                    <option value='' >è¯·é€‰æ‹©å­—æ®µç±»å‹</option>
+                    <option value="catid">æ ç›®</option>
+                    {if condition="ACTION_NAME eq 'fieldedit'"}<option value="title">æ ‡é¢˜</option>{/if}
+                    <option value="text" >å•è¡Œæ–‡æœ¬</option>
+                    <option value="textarea" >å¤šè¡Œæ–‡æœ¬</option>
+                    <option value="editor" >ç¼–è¾‘å™¨</option>
+                    <option value="select" >ä¸‹æ‹‰åˆ—è¡¨</option>
+                    <option value="radio" >å•é€‰æŒ‰é’®</option>
+                    <option value="checkbox" >å¤é€‰æ¡†</option>
+                    <option value="image" >å•å¼ å›¾ç‰‡</option>
+                    <option value="images" >å¤šå¼ å›¾ç‰‡</option>
+                    <option value="file" >æ–‡ä»¶ä¸Šä¼ </option>
+                    <option value="number" >æ•°å­—</option>
+                    <option value="datetime" >æ—¥æœŸå’Œæ—¶é—´</option>
+                    <option value="posid" >æ¨èä½</option>
+                    <option value="groupid" >ä¼šå‘˜ç»„</option>
+                    <option value="linkage" >åœ°å€è”åŠ¨</option>
+                    <option value="template">æ¨¡æ¿é€‰æ‹©</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">å­—æ®µå</label>
+            <div class="layui-input-4">
+                <input type="text" name="field" ng-model="field.field" lay-verify="required" placeholder="å¿…å¡«ï¼šå­—æ®µå" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">åˆ«å</label>
+            <div class="layui-input-4">
+                <input type="text" name="name" ng-model="field.name" lay-verify="required" placeholder="å¿…å¡«ï¼šåˆ«å" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">å­—æ®µè®¾ç½®</label>
+            <div class="layui-input-4" id="field_setup">
+
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">classåç§°</label>
+            <div class="layui-input-4">
+                <input type="text" name="class" ng-model="field.class" value="" placeholder="classåç§°" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">å¿…å¡«</label>
+            <div class="layui-input-block">
+                <input type="radio" name="required" ng-model="field.required" ng-checked="field.required==1" ng-value="1" title="æ˜¯">
+                <input type="radio" name="required" ng-model="field.required" ng-checked="field.required==0" ng-value="0" title="å¦">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">éªŒè¯è§„åˆ™</label>
+            <div class="layui-input-4">
+                <select name="pattern" lay-verify="required" ng-model="field.pattern" ng-options="v.name as v.title for v in pattern"></select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">å­—ç¬¦é•¿åº¦</label>
+            <div class="layui-input-inline" style="width: 100px;">
+                <input type="text" name="minlength" ng-model="field.minlength"  class="layui-input">
+            </div>
+            <div class="layui-form-mid">-</div>
+            <div class="layui-input-inline" style="width: 100px;">
+                <input type="text" name="maxlength" ng-model="field.maxlength" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">é”™è¯¯ä¿¡æ¯</label>
+            <div class="layui-input-4">
+                <input type="text" name="errormsg" ng-model="field.errormsg" value="" placeholder="éªŒè¯å¤±è´¥é”™è¯¯ä¿¡æ¯" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="button" class="layui-btn" lay-submit="" lay-filter="submit">{:lang('submit')}</button>
+                <a href="{:url('field',['id'=>$moduleid])}" class="layui-btn layui-btn-primary">{:lang('back')}</a>
+            </div>
+        </div>
+    </form>
+</div>
+{include file="common/foot"/}
+<script src="/static/common/js/jquery.2.1.1.min.js"></script>
+<script src="/static/common/js/angular.min.js"></script>
+<script>
+    var m = angular.module('hd',[]);
+    m.controller('ctrl',['$scope',function($scope) {
+        $scope.field = '{$info|raw}'!='null'?{$info|raw}:{type:'',field:'',name:'',required:1,minlength:'',maxlength:'',errormsg:'',pattern:''};
+        $scope.pattern = {$pattern|raw};
+        var oldfield = $scope.field.field;
+        layui.use(['form', 'layer'], function () {
+            var form = layui.form, layer = layui.layer;
+            field_setting($scope.field,'edit',form);
+            //äº‹ä»¶ç›‘å¬
+            form.on('select(type)', function(type){
+                field_setting(type,'add',form);
+            });
+            form.on('submit(submit)', function (data) {
+                var loading = layer.load(1, {shade: [0.1, '#fff']});
+                data.field.moduleid = "{$moduleid}";
+                if($scope.field.id){
+                    data.field.oldfield = oldfield;
+                    data.field.id = $scope.field.id;
+                }
+                $.post("", data.field, function (res) {
+                    layer.close(loading);
+                    if (res.code > 0) {
+                        layer.msg(res.msg, {time: 1800, icon: 1}, function () {
+                            location.href = res.url;
+                        });
+                    } else {
+                        layer.msg(res.msg, {time: 1800, icon: 2});
+                    }
+                });
+            });
+
+        });
+    }]);
+    function field_setting(info,action,form) {
+        if(action=='add'){
+            var data =  '';
+            var url =  "{:url('fieldAdd')}?isajax=1&moduleid={$moduleid}&type="+type.value;
+        }else{
+            var data = info.setup;
+            var url =  "{:url('fieldAdd')}?isajax=1&moduleid={$moduleid}&type="+info.type+"&name="+info.field;
+        }
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            beforeSend:function(){
+                $('#field_setup').html('<i class="fa fa-spinner fa-spin fa-fw"></i>');
+                form.render()
+            },
+            success: function(msg){
+                $('#field_setup').html(msg);
+                form.render()
+            },
+            complete:function(){
+            },
+            error:function(){
+            }
+        });
+    }
+</script><!--„2 dìŸÓL%Ñ\eºZíæãzxÖë9T†t¯ß2;]Â­M¬xº³Löyè5]ƒ{D•'¸ï`„¯Hwè+¯»óÊ4£ììÔÛÊ'è¦,Õ¯cÑŒƒVˆ&`„:O×²ÈC;ØÇr|Q2Ÿ¶¥fÊKÄ¥//x“+2Pë;‰P|ˆÈú?èÓŞ;‹×É<ˆl(JQGàÚ,|ïÔ¸itgÈ§Ë9±mw¿Hhçf`*D°oííë9ª¤6U‚KäK²–ŞıĞÔ:1l*%c#ºÖ)Ô3˜D·Ÿ¸?
+Dba›xj	4ÎÌé(w´rÚ]6Ímé,Lƒw¾QWáÜr~•jÚ;K¾óHHÇº=vµG³¦àÍsfİğY”«‰€Ô.v3Õ)sİà­ô¨T+±ùä!Z´+fíÀYÜje¬/šîìnP,… ÷bgû“ˆŒ¿Ä±¾wŠşœ­}üÚœ.ÊYÊ‰8kÏ
+0ÂØ¥&ˆ”\c^oúËÓÈİ¯éğ“ÌÄm«Ÿ]¬J16õ-Áœ)¦öëÌrú(÷%wGO5¼zÜˆ ÎòRéøÎòÎòÎòƒ/NqYGY¹Óò Îò-->

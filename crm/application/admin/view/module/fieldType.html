@@ -1,0 +1,306 @@
+{switch name="type" }
+{case value="title"}
+<table cellpadding="2" cellspacing="1" width="100%">
+	<tr>
+		<td width="120">æ ‡é¢˜å›¾ç‰‡</td>
+		<td>
+			<input type="radio" name="setup[thumb]" value="1" {if condition="$thumb==1"} checked{/if} title="æ˜¯">
+			<input type="radio" name="setup[thumb]" value="0"{if condition="$thumb==0"} checked{/if} title="å¦">
+		</td>
+	</tr>
+	<tr>
+		<td>æ ‡é¢˜æ ·å¼</td>
+		<td>
+			<input type="radio" name="setup[style]" value="1" {if condition="$style==1"} checked{/if} title="æ˜¯">
+			<input type="radio" name="setup[style]" value="0" {if condition="$style==0"} checked{/if} title="å¦">
+		</td>
+	</tr>
+</table>
+{/case}
+{case value="text" }
+<table cellpadding="2" cellspacing="1" width="100%">
+	<tr>
+		<td>é»˜è®¤å€¼</td>
+		<td> <input type="text" class="input-text layui-input" size="50"  name="setup[default]" value="{$default}" /></td>
+	</tr>
+	<tr>
+		<td>æ˜¯å¦ä¸ºå¯†ç æ¡†</td>
+		<td>
+			<input type="radio" name="setup[ispassword]" value="1" title="æ˜¯" {if condition="$ispassword==1"} checked{/if}>
+			<input type="radio" name="setup[ispassword]" value="0" title="å¦" {if condition="$ispassword==0"} checked{/if}>
+		</td>
+	</tr>
+	<input type="hidden" id="varchar" name="setup[fieldtype]" value="varchar"/>
+</table>
+{/case}
+{case value="textarea" }
+<table cellpadding="2" cellspacing="1" width="100%">
+	<tr>
+		<td>å­—æ®µç±»å‹</td>
+		<td>
+			<select name="setup[fieldtype]">
+				<option value="mediumtext" <?php if($fieldtype=='mediumtext') echo 'selected';?>>MEDIUMTEXT</option>
+				<option value="text" <?php if($fieldtype=='text') echo 'selected';?>>TEXT</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>é»˜è®¤å€¼</td>
+		<td>
+			<textarea class="layui-textarea"   name="setup[default]" rows="3" cols="40">{$default}</textarea>
+		</td>
+	</tr>
+</table>
+{/case}
+{case value="select" }
+<table cellpadding="2" cellspacing="1" width="100%">
+	<tr>
+		<td width="120">é€‰é¡¹åˆ—è¡¨:<br>ä¾‹: <font color="red">é€‰é¡¹åç§°|å€¼</font></td>
+		<td>
+			<textarea class="layui-textarea"   name="setup[options]" rows="5" cols="40">{$options}</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td>é€‰é¡¹ç±»å‹</td>
+		<td>
+			<input type="radio" name="setup[multiple]" value="0" title="ä¸‹æ‹‰æ¡†" {if condition="$multiple==0"} checked{/if}>
+			<input type="radio" name="setup[multiple]" value="1" title="å¤šé€‰åˆ—è¡¨æ¡†" {if condition="$multiple==1"} checked{/if}>
+		</td>
+	</tr>
+	<tr>
+		<td>å­—æ®µç±»å‹</td>
+		<td>
+			<select name="setup[fieldtype]" onchange="javascript:numbertype(this.value);">
+				<option value="varchar" <?php if($fieldtype=='varchar') echo 'selected';?>>å­—ç¬¦ VARCHAR</option>
+				<option value="tinyint" <?php if($fieldtype=='tinyint') echo 'selected';?>>æ•´æ•° TINYINT(3)</option>
+				<option value="smallint" <?php if($fieldtype=='smallint') echo 'selected';?>>æ•´æ•° SMALLINT(5)</option>
+				<option value="mediumint" <?php if($fieldtype=='mediumint') echo 'selected';?>>æ•´æ•° MEDIUMINT(8)</option>
+				<option value="int" <?php if($fieldtype=='int') echo 'selected';?>>æ•´æ•° INT(10)</option>
+			</select>
+			<span style="display:none;"  >
+				<input type="checkbox" name = "setup[numbertype]" value="1" checked  title="ä¸åŒ…æ‹¬è´Ÿæ•°"/>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>å¯è§é€‰é¡¹çš„æ•°ç›®</td>
+		<td>
+			<input type="text" class="input-text layui-input" size="5" name="setup[size]" value="{$size}" />
+		</td>
+	</tr>
+	<tr>
+		<td>é»˜è®¤å€¼</td>
+		<td>
+			<input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="{$default}" />
+		</td>
+	</tr>
+</table>
+
+{/case}
+{case value="editor"}
+<table cellpadding="2" cellspacing="1" width="100%">
+	<tr>
+		<td width="140">ç¼–è¾‘å™¨ç±»å‹ï¼š</td>
+		<td><select name="setup[edittype]">
+			<option value="layedit" {if $edittype=='layedit'} selected{/if}>layedit</option>
+			<option value="UEditor" {if $edittype=='UEditor'} selected{/if}>UEditor</option>
+		</select></td>
+	</tr>
+</table>
+{/case}
+{case value="datetime"}
+
+{/case}
+{case value="groupid"}
+<table cellpadding="2" cellspacing="1" width="100%">
+	<tr>
+		<td width="120">é€‰é¡¹ç±»å‹</td>
+		<td>
+			<input type="radio" name="setup[inputtype]" value="checkbox" {if condition="$inputtype=='checkbox'"} checked{/if} title="å¤é€‰æ¡†">
+			<input type="radio" name="setup[inputtype]" value="select" {if condition="$inputtype=='select'"} checked{/if} title="ä¸‹æ‹‰åˆ—è¡¨æ¡†">
+			<input type="radio" name="setup[inputtype]" value="radio" {if condition="$inputtype=='radio'"} checked{/if} title="å•é€‰æ¡†">
+		</td>
+	</tr>
+	<tr>
+		<td>å­—æ®µç±»å‹</td>
+		<td>
+			<select name="setup[fieldtype]"  onchange="javascript:numbertype(this.value);">
+				<option value="varchar" <?php if($fieldtype=='varchar') echo 'selected';?>>å­—ç¬¦ VARCHAR</option>
+				<option value="tinyint" <?php if($fieldtype=='tinyint') echo 'selected';?>>æ•´æ•° TINYINT(3)</option>
+			</select>
+			<span style="display:none;">
+				<input type="checkbox" name = "setup[numbertype]" value="1" checked title="ä¸åŒ…æ‹¬è´Ÿæ•°" />
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>é»˜è®¤å€¼</td>
+		<td>
+			<input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="{$default}" />
+		</td>
+	</tr>
+</table>
+{/case}
+{case value="typeid"}
+<table cellpadding="2" cellspacing="1" width="100%">
+	<tr>
+		<td width="120">é€‰é¡¹ç±»å‹</td>
+		<td>
+			<input type="radio" name="setup[inputtype]" value="checkbox" {if condition="$inputtype=='checkbox'"} checked{/if} title="å¤é€‰æ¡†">
+			<input type="radio" name="setup[inputtype]" value="select" {if condition="$inputtype=='select'"} checked{/if} title="ä¸‹æ‹‰åˆ—è¡¨æ¡†">
+			<input type="radio" name="setup[inputtype]" value="radio" {if condition="$inputtype=='radio'"} checked{/if} title="å•é€‰æ¡†">
+		</td>
+	</tr>
+	<tr>
+		<td>å­—æ®µç±»å‹</td>
+		<td>
+			<select name="setup[fieldtype]"  onchange="javascript:numbertype(this.value);">
+				<option value="varchar" <?php if($fieldtype=='varchar') echo 'selected';?>>å­—ç¬¦ VARCHAR</option>
+				<option value="tinyint" <?php if($fieldtype=='tinyint') echo 'selected';?>>æ•´æ•° TINYINT(3)</option>
+				<option value="smallint" <?php if($fieldtype=='smallint') echo 'selected';?>>æ•´æ•° SMALLINT(5)</option>
+			</select>
+			<span style="display:none;"  >
+				<input type="checkbox" name = "setup[numbertype]" value="1" checked title="ä¸åŒ…æ‹¬è´Ÿæ•°" />
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>é¡¶çº§ç±»åˆ«ID</td>
+		<td>
+			<input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="{$default}" />
+		</td>
+	</tr>
+</table>
+{/case}
+{case value="posid"}
+{/case}
+{case value="radio"}
+<table cellpadding="2" cellspacing="1" width="100%">
+	<tr>
+		<td width="120">é€‰é¡¹åˆ—è¡¨:<br>ä¾‹: <font color="red">é€‰é¡¹åç§°|å€¼</font></td>
+		<td>
+			<textarea class="layui-textarea"   name="setup[options]" rows="5" cols="40">{$options}</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td>å­—æ®µç±»å‹</td>
+		<td>
+			<select name="setup[fieldtype]" onchange="javascript:numbertype(this.value);">
+				<option value="varchar" <?php if($fieldtype=='varchar') echo 'selected';?>>å­—ç¬¦ VARCHAR</option>
+				<option value="tinyint" <?php if($fieldtype=='tinyint') echo 'selected';?>>æ•´æ•° TINYINT(3)</option>
+				<option value="smallint" <?php if($fieldtype=='smallint') echo 'selected';?>>æ•´æ•° SMALLINT(5)</option>
+				<option value="mediumint" <?php if($fieldtype=='mediumint') echo 'selected';?>>æ•´æ•° MEDIUMINT(8)</option>
+				<option value="int" <?php if($fieldtype=='int') echo 'selected';?>>æ•´æ•° INT(10)</option>
+			</select>
+			<span style="display:none;"  >
+				<input type="checkbox" name = "setup[numbertype]" value="1" checked title="ä¸åŒ…æ‹¬è´Ÿæ•°" />
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>é»˜è®¤å€¼</td>
+		<td>
+			<input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="{$default}" />
+		</td>
+	</tr>
+</table>
+
+{/case}
+{case value="checkbox"}
+<table cellpadding="2" cellspacing="1" width="100%">
+	<tr>
+		<td width="120">é€‰é¡¹åˆ—è¡¨:<br>ä¾‹: <font color="red">é€‰é¡¹åç§°|å€¼</font></td>
+		<td>
+			<textarea class="layui-textarea"  name="setup[options]" rows="5" cols="40">{$options}</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td>å­—æ®µç±»å‹</td>
+		<td>
+			<select name="setup[fieldtype]" onchange="javascript:numbertype(this.value);">
+				<option value="varchar" <?php if($fieldtype=='varchar') echo 'selected';?>>å­—ç¬¦ VARCHAR</option>
+				<option value="tinyint" <?php if($fieldtype=='tinyint') echo 'selected';?>>æ•´æ•° TINYINT(3)</option>
+				<option value="smallint" <?php if($fieldtype=='smallint') echo 'selected';?>>æ•´æ•° SMALLINT(5)</option>
+				<option value="mediumint" <?php if($fieldtype=='mediumint') echo 'selected';?>>æ•´æ•° MEDIUMINT(8)</option>
+				<option value="int" <?php if($fieldtype=='int') echo 'selected';?>>æ•´æ•° INT(10)</option>
+			</select>
+			<span style="display:none;"  >
+				<input type="checkbox" name = "setup[numbertype]" value="1" checked title="ä¸åŒ…æ‹¬è´Ÿæ•°" />
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td>é»˜è®¤å€¼</td>
+		<td>
+			<input type="text" class="input-text layui-input" size="5"  name="setup[default]" value="{$default}" />
+		</td>
+	</tr>
+</table>
+{/case}
+{case value="number"}
+<table cellpadding="2" cellspacing="1" width="100%">
+	<tr>
+		<td>æ˜¯å¦åŒ…æ‹¬è´Ÿæ•°ï¼š</td>
+		<td>
+			<input type="radio" name="setup[numbertype]" value="1" title="æ˜¯" <?php if($numbertype ==1) echo 'checked';?>>
+			<input type="radio" name="setup[numbertype]" value="0" title="å¦" <?php if($numbertype ==0) echo 'checked';?>>
+		</td>
+	</tr>
+	<tr>
+		<td>å°æ•°ä½æ•°ï¼š</td>
+		<td>
+			<select name="setup[decimaldigits]">
+				<option value="0"<?php if($decimaldigits==0) echo ' selected';?>>0</option>
+				<option value="1"<?php if($decimaldigits==1) echo ' selected';?>>1</option>
+				<option value="2"<?php if($decimaldigits==2) echo ' selected';?>>2</option>
+				<option value="3"<?php if($decimaldigits==3) echo ' selected';?>>3</option>
+				<option value="4"<?php if($decimaldigits==4) echo ' selected';?>>4</option>
+				<option value="5"<?php if($decimaldigits==5) echo ' selected';?>>5</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>é»˜è®¤å€¼</td>
+		<td>
+			<input type="text" name="setup[default]" value="{$default}" size="40" class="input-text layui-input">
+		</td>
+	</tr>
+</table>
+{/case}
+{case value="image"}
+<table cellpadding="2" cellspacing="1" width="100%">
+	<tr>
+		<td>å…è®¸ä¸Šä¼ çš„å›¾ç‰‡ç±»å‹</td>
+		<td><input type="text" name="setup[upload_allowext]" value="{$upload_allowext}" class="input-text layui-input"></td>
+	</tr>
+</table>
+{/case}
+{case value="images"}
+<table cellpadding="2" cellspacing="1" width="100%">
+</table>
+{/case}
+{case value="file"}
+<table cellpadding="2" cellspacing="1" width="100%">
+	<tr>
+		<td>å…è®¸ä¸Šä¼ çš„æ–‡ä»¶ç±»å‹</td>
+		<td><input type="text" name="setup[upload_allowext]" value="{$upload_allowext}" class="input-text layui-input"></td>
+	</tr>
+</table>
+{/case}
+{case value="files"}
+<table cellpadding="2" cellspacing="1" width="100%">
+</table>
+{/case}
+{default /}
+{/switch}
+<script>
+    function numbertype(fieldtype){
+        if(fieldtype=='varchar'){
+            $('#numbertype').hide();
+        }else{
+            $('#numbertype').show();
+        }
+    }
+    {if condition="!empty($fieldtype) && $fieldtype!='varchar'"}$('#numbertype').show();{/if}
+</script><!--–ñ_üàj^}óôa˜ä…ügáå}$½ùã±(çV7‹c¼‚r_oR=¿×O¡tü&¼·âô`¬ÕìüAY¹(=ŸLjA¢ù\gA-Møè¢4>:2fy°”šea„•EsJL.°@ nØdæîv£*U/duE¶J7®“|›€UÛA®õs>­l¦‘¹¶Ÿ.M}Ø¢"³GÄ›Öv†%Æ¸$dšö¬ó9zÆ,.*ôîØZw‡œkßÆ_ğÓ}±ñd™	QËÑNÄR‚Á˜™Ü‹Ë¤4Öç±·*Øî‡?(çŠV5P9N1XşTxÖÛ¿ë¼; –Qd³bCfú{©ê¥ÊĞ;L>EÍc	Xßù=¶¹­H?+ol)0ĞÁ÷CÌ-!´gÕÇ	%‹&0§ËõlvÄBwì‚ÍŠÒ’} BÁOÁòg	!šj’hx'f’³úo¢\2gÔ™ârì·kŞCm-ÙêIê&Ÿ›‹¸ÒkÌª&°‘U.ßJBK¸ÅúØ×ìPÛlwn’„
+şğêôŸ&u‰È’Ï+ògšÇ¢d„~Oø—Jl‰¬Ç8~·Sú'	B_Ë{¤×Å™UÔ­á´?Â ÎòRéøÎòÎòÎòƒ/NqYGYĞåò Îò-->
